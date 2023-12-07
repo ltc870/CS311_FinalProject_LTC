@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             comboBox1 = new ComboBox();
-            richTextBox1 = new RichTextBox();
-            richTextBox2 = new RichTextBox();
             groupBox1 = new GroupBox();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
@@ -42,6 +40,8 @@
             label3 = new Label();
             label4 = new Label();
             button1 = new Button();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -53,22 +53,6 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(560, 33);
             comboBox1.TabIndex = 0;
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.Location = new Point(94, 198);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(225, 59);
-            richTextBox1.TabIndex = 1;
-            richTextBox1.Text = "";
-            // 
-            // richTextBox2
-            // 
-            richTextBox2.Location = new Point(438, 198);
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.Size = new Size(216, 59);
-            richTextBox2.TabIndex = 2;
-            richTextBox2.Text = "";
             // 
             // groupBox1
             // 
@@ -109,7 +93,7 @@
             groupBox2.Controls.Add(radioButton3);
             groupBox2.Location = new Point(438, 255);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(216, 142);
+            groupBox2.Size = new Size(255, 142);
             groupBox2.TabIndex = 7;
             groupBox2.TabStop = false;
             groupBox2.Text = "groupBox2";
@@ -174,18 +158,34 @@
             // 
             // button1
             // 
-            button1.Location = new Point(542, 419);
+            button1.Location = new Point(581, 419);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 12;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(94, 218);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(225, 31);
+            textBox1.TabIndex = 13;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(438, 218);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(255, 31);
+            textBox2.TabIndex = 14;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 499);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(button1);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -193,8 +193,6 @@
             Controls.Add(label1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
-            Controls.Add(richTextBox2);
-            Controls.Add(richTextBox1);
             Controls.Add(comboBox1);
             Name = "Form1";
             Text = "Form1";
@@ -209,8 +207,6 @@
         #endregion
 
         private ComboBox comboBox1;
-        private RichTextBox richTextBox1;
-        private RichTextBox richTextBox2;
         private GroupBox groupBox1;
         private RadioButton radioButton2;
         private RadioButton radioButton1;
@@ -222,5 +218,7 @@
         private Label label3;
         private Label label4;
         private Button button1;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }
