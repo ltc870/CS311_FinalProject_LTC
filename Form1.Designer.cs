@@ -30,18 +30,19 @@
         {
             cboBoxUnitPicker = new ComboBox();
             grpBoxConverGrp1 = new GroupBox();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
+            rdoBtn2 = new RadioButton();
+            rdoBtn1 = new RadioButton();
             grpBoxConverGrp2 = new GroupBox();
-            radioButton4 = new RadioButton();
-            radioButton3 = new RadioButton();
-            label1 = new Label();
-            lblEqualSign = new Label();
+            rdoBtn4 = new RadioButton();
+            rdoBtn3 = new RadioButton();
+            lblFormula = new Label();
             label3 = new Label();
             lblTitle = new Label();
-            button1 = new Button();
+            btnInstructions = new Button();
             textBoxUnit1 = new TextBox();
             textBoxUnit2 = new TextBox();
+            btnConvertRight = new Button();
+            btnConvertLeft = new Button();
             grpBoxConverGrp1.SuspendLayout();
             grpBoxConverGrp2.SuspendLayout();
             SuspendLayout();
@@ -57,8 +58,8 @@
             // 
             // grpBoxConverGrp1
             // 
-            grpBoxConverGrp1.Controls.Add(radioButton2);
-            grpBoxConverGrp1.Controls.Add(radioButton1);
+            grpBoxConverGrp1.Controls.Add(rdoBtn2);
+            grpBoxConverGrp1.Controls.Add(rdoBtn1);
             grpBoxConverGrp1.Location = new Point(94, 255);
             grpBoxConverGrp1.Name = "grpBoxConverGrp1";
             grpBoxConverGrp1.Size = new Size(225, 142);
@@ -66,32 +67,32 @@
             grpBoxConverGrp1.TabStop = false;
             grpBoxConverGrp1.Text = "groupBox1";
             // 
-            // radioButton2
+            // rdoBtn2
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(30, 92);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(141, 29);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "radioButton2";
-            radioButton2.UseVisualStyleBackColor = true;
+            rdoBtn2.AutoSize = true;
+            rdoBtn2.Location = new Point(30, 92);
+            rdoBtn2.Name = "rdoBtn2";
+            rdoBtn2.Size = new Size(70, 29);
+            rdoBtn2.TabIndex = 1;
+            rdoBtn2.TabStop = true;
+            rdoBtn2.Text = "Feet";
+            rdoBtn2.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdoBtn1
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(30, 48);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(141, 29);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "radioButton1";
-            radioButton1.UseVisualStyleBackColor = true;
+            rdoBtn1.AutoSize = true;
+            rdoBtn1.Location = new Point(30, 48);
+            rdoBtn1.Name = "rdoBtn1";
+            rdoBtn1.Size = new Size(83, 29);
+            rdoBtn1.TabIndex = 0;
+            rdoBtn1.TabStop = true;
+            rdoBtn1.Text = "Meter";
+            rdoBtn1.UseVisualStyleBackColor = true;
             // 
             // grpBoxConverGrp2
             // 
-            grpBoxConverGrp2.Controls.Add(radioButton4);
-            grpBoxConverGrp2.Controls.Add(radioButton3);
+            grpBoxConverGrp2.Controls.Add(rdoBtn4);
+            grpBoxConverGrp2.Controls.Add(rdoBtn3);
             grpBoxConverGrp2.Location = new Point(438, 255);
             grpBoxConverGrp2.Name = "grpBoxConverGrp2";
             grpBoxConverGrp2.Size = new Size(255, 142);
@@ -99,55 +100,47 @@
             grpBoxConverGrp2.TabStop = false;
             grpBoxConverGrp2.Text = "groupBox2";
             // 
-            // radioButton4
+            // rdoBtn4
             // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(23, 92);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(141, 29);
-            radioButton4.TabIndex = 1;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "radioButton4";
-            radioButton4.UseVisualStyleBackColor = true;
+            rdoBtn4.AutoSize = true;
+            rdoBtn4.Location = new Point(23, 92);
+            rdoBtn4.Name = "rdoBtn4";
+            rdoBtn4.Size = new Size(83, 29);
+            rdoBtn4.TabIndex = 1;
+            rdoBtn4.TabStop = true;
+            rdoBtn4.Text = "Meter";
+            rdoBtn4.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rdoBtn3
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(23, 48);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(141, 29);
-            radioButton3.TabIndex = 0;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "radioButton3";
-            radioButton3.UseVisualStyleBackColor = true;
+            rdoBtn3.AutoSize = true;
+            rdoBtn3.Location = new Point(23, 48);
+            rdoBtn3.Name = "rdoBtn3";
+            rdoBtn3.Size = new Size(70, 29);
+            rdoBtn3.TabIndex = 0;
+            rdoBtn3.TabStop = true;
+            rdoBtn3.Text = "Feet";
+            rdoBtn3.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblFormula
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(94, 424);
-            label1.Name = "label1";
-            label1.Size = new Size(59, 25);
-            label1.TabIndex = 8;
-            label1.Text = "label1";
-            // 
-            // lblEqualSign
-            // 
-            lblEqualSign.AutoSize = true;
-            lblEqualSign.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblEqualSign.Location = new Point(363, 218);
-            lblEqualSign.Name = "lblEqualSign";
-            lblEqualSign.Size = new Size(31, 32);
-            lblEqualSign.TabIndex = 9;
-            lblEqualSign.Text = "=";
+            lblFormula.AutoSize = true;
+            lblFormula.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFormula.Location = new Point(94, 424);
+            lblFormula.Name = "lblFormula";
+            lblFormula.Size = new Size(115, 32);
+            lblFormula.TabIndex = 8;
+            lblFormula.Text = "Formula:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(206, 424);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(215, 424);
             label3.Name = "label3";
-            label3.Size = new Size(59, 25);
+            label3.Size = new Size(53, 32);
             label3.TabIndex = 10;
-            label3.Text = "label3";
+            label3.Text = "xxx";
             // 
             // lblTitle
             // 
@@ -159,43 +152,66 @@
             lblTitle.TabIndex = 11;
             lblTitle.Text = "Unit Converter";
             // 
-            // button1
+            // btnInstructions
             // 
-            button1.Location = new Point(581, 419);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 12;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnInstructions.Location = new Point(581, 419);
+            btnInstructions.Name = "btnInstructions";
+            btnInstructions.Size = new Size(112, 34);
+            btnInstructions.TabIndex = 12;
+            btnInstructions.Text = "Instructions";
+            btnInstructions.UseVisualStyleBackColor = true;
             // 
             // textBoxUnit1
             // 
-            textBoxUnit1.Location = new Point(94, 218);
+            textBoxUnit1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxUnit1.Location = new Point(88, 194);
             textBoxUnit1.Name = "textBoxUnit1";
-            textBoxUnit1.Size = new Size(225, 31);
+            textBoxUnit1.Size = new Size(225, 61);
             textBoxUnit1.TabIndex = 13;
             textBoxUnit1.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxUnit2
             // 
-            textBoxUnit2.Location = new Point(438, 218);
+            textBoxUnit2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxUnit2.Location = new Point(438, 194);
             textBoxUnit2.Name = "textBoxUnit2";
-            textBoxUnit2.Size = new Size(255, 31);
+            textBoxUnit2.Size = new Size(255, 61);
             textBoxUnit2.TabIndex = 14;
             textBoxUnit2.TextAlign = HorizontalAlignment.Center;
+            // 
+            // btnConvertRight
+            // 
+            btnConvertRight.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnConvertRight.Location = new Point(319, 184);
+            btnConvertRight.Name = "btnConvertRight";
+            btnConvertRight.Size = new Size(112, 34);
+            btnConvertRight.TabIndex = 15;
+            btnConvertRight.Text = "--->";
+            btnConvertRight.UseVisualStyleBackColor = true;
+            // 
+            // btnConvertLeft
+            // 
+            btnConvertLeft.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnConvertLeft.Location = new Point(319, 233);
+            btnConvertLeft.Name = "btnConvertLeft";
+            btnConvertLeft.Size = new Size(112, 34);
+            btnConvertLeft.TabIndex = 16;
+            btnConvertLeft.Text = "<---";
+            btnConvertLeft.UseVisualStyleBackColor = true;
             // 
             // formUnitConverter
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 499);
+            Controls.Add(btnConvertLeft);
+            Controls.Add(btnConvertRight);
             Controls.Add(textBoxUnit2);
             Controls.Add(textBoxUnit1);
-            Controls.Add(button1);
+            Controls.Add(btnInstructions);
             Controls.Add(lblTitle);
             Controls.Add(label3);
-            Controls.Add(lblEqualSign);
-            Controls.Add(label1);
+            Controls.Add(lblFormula);
             Controls.Add(grpBoxConverGrp2);
             Controls.Add(grpBoxConverGrp1);
             Controls.Add(cboBoxUnitPicker);
@@ -213,17 +229,18 @@
 
         private ComboBox cboBoxUnitPicker;
         private GroupBox grpBoxConverGrp1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private RadioButton rdoBtn2;
+        private RadioButton rdoBtn1;
         private GroupBox grpBoxConverGrp2;
-        private RadioButton radioButton4;
-        private RadioButton radioButton3;
-        private Label label1;
-        private Label lblEqualSign;
+        private RadioButton rdoBtn4;
+        private RadioButton rdoBtn3;
+        private Label lblFormula;
         private Label label3;
         private Label lblTitle;
-        private Button button1;
+        private Button btnInstructions;
         private TextBox textBoxUnit1;
         private TextBox textBoxUnit2;
+        private Button btnConvertRight;
+        private Button btnConvertLeft;
     }
 }
