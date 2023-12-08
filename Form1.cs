@@ -65,83 +65,108 @@ namespace CS311_FinalProject_LTC
         private void btnConvertRight_Click(object sender, EventArgs e)
         {
             RightTextBoxValueChecker();
+            if (cboBoxUnitPicker.Text == "Length")
+            {
+                if (rdoBtn1.Checked)
+                {
+                    if (rdoBtn5.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 3.28084);
+                    }
+                    else if (rdoBtn6.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn7.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString((value1 * 0.000621371));
+                    }
+                    else if (rdoBtn8.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 0.001);
+                    }
+                }
+                else if (rdoBtn2.Checked)
+                {
+                    if (rdoBtn5.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn6.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 / 3.281);
+                    }
+                    else if (rdoBtn7.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString((value1 / 5280));
+                    }
+                    else if (rdoBtn8.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 / 3281);
+                    }
+                }
+                else if (rdoBtn3.Checked)
+                {
+                    if (rdoBtn5.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 3280.84);
+                    }
+                    else if (rdoBtn6.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 1000);
+                    }
+                    else if (rdoBtn7.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 / 0.621371);
+                    }
+                    else if (rdoBtn8.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                }
+                else if (rdoBtn4.Checked)
+                {
+                    if (rdoBtn5.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 5280);
+                    }
+                    else if (rdoBtn6.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 1609.34);
+                    }
+                    else if (rdoBtn7.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn8.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 1.60934);
+                    }
+                }
+            }
+            else if (cboBoxUnitPicker.Text == "Mass")
+            {
+                if (rdoBtn1.Checked)
+                {
+                    if (rdoBtn5.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 2.20462);
+                    }
+                    else if (rdoBtn6.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn7.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 1000);
+                    }
+                    else if (rdoBtn8.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 35.274);
+                    }
+                }
+            }
 
-            if (rdoBtn1.Checked && unitType == "Length")
-            {
-                if (rdoBtn5.Checked)
-                {
-                    textBoxUnit2.Text = Convert.ToString(value1 * 3.28084);
-                }
-                else if (rdoBtn6.Checked)
-                {
-                    MessageBox.Show("Cannot convert to the same unit type");
-                }
-                else if (rdoBtn7.Checked)
-                {
-                    textBoxUnit2.Text = Convert.ToString((value1 * 0.000621371));
-                }
-                else if (rdoBtn8.Checked)
-                {
-                    textBoxUnit2.Text = Convert.ToString(value1 * 0.001);
-                }
-            }
-            else if (rdoBtn2.Checked && unitType == "Length")
-            {
-                if (rdoBtn5.Checked)
-                {
-                    MessageBox.Show("Cannot convert to the same unit type");
-                }
-                else if (rdoBtn6.Checked)
-                {
-                    textBoxUnit2.Text = Convert.ToString(value1 / 3.281);
-                }
-                else if (rdoBtn7.Checked)
-                {
-                    textBoxUnit2.Text = Convert.ToString((value1 / 5280));
-                }
-                else if (rdoBtn8.Checked)
-                {
-                    textBoxUnit2.Text = Convert.ToString(value1 / 3281);
-                }
-            }
-            else if (rdoBtn3.Checked && unitType == "Length")
-            {
-                if (rdoBtn5.Checked)
-                {
-                    textBoxUnit2.Text = Convert.ToString(value1 * 3280.84);
-                }
-                else if (rdoBtn6.Checked)
-                {
-                    textBoxUnit2.Text = Convert.ToString(value1 * 1000);
-                }
-                else if (rdoBtn7.Checked)
-                {
-                    textBoxUnit2.Text = Convert.ToString(value1 / 0.621371);
-                }
-                else if (rdoBtn8.Checked)
-                {
-                    MessageBox.Show("Cannot convert to the same unit type");
-                }
-            }
-            else if (rdoBtn4.Checked && unitType == "Length")
-            {
-                if (rdoBtn5.Checked)
-                {
-                    textBoxUnit2.Text = Convert.ToString(value1 * 5280);
-                }
-                else if (rdoBtn6.Checked)
-                {
-                    textBoxUnit2.Text = Convert.ToString(value1 * 1609.34);
-                }
-                else if (rdoBtn7.Checked)
-                {
-                    MessageBox.Show("Cannot convert to the same unit type");
-                }
-                else if (rdoBtn8.Checked)
-                {
-                    textBoxUnit2.Text = Convert.ToString(value1 * 1.60934);
-                }
-            }
 
         }
 
