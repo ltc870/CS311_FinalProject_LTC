@@ -30,11 +30,15 @@
         {
             cboBoxUnitPicker = new ComboBox();
             grpBoxConverGrp1 = new GroupBox();
+            rdoBtn4 = new RadioButton();
+            rdoBtn3 = new RadioButton();
             rdoBtn2 = new RadioButton();
             rdoBtn1 = new RadioButton();
             grpBoxConverGrp2 = new GroupBox();
-            rdoBtn4 = new RadioButton();
-            rdoBtn3 = new RadioButton();
+            rdoBtn8 = new RadioButton();
+            rdoBtn7 = new RadioButton();
+            rdoBtn6 = new RadioButton();
+            rdoBtn5 = new RadioButton();
             lblFormula = new Label();
             label3 = new Label();
             lblTitle = new Label();
@@ -55,17 +59,42 @@
             cboBoxUnitPicker.Name = "cboBoxUnitPicker";
             cboBoxUnitPicker.Size = new Size(560, 33);
             cboBoxUnitPicker.TabIndex = 0;
+            cboBoxUnitPicker.SelectedIndexChanged += cboBoxUnitPicker_SelectedIndexChanged;
             // 
             // grpBoxConverGrp1
             // 
+            grpBoxConverGrp1.Controls.Add(rdoBtn4);
+            grpBoxConverGrp1.Controls.Add(rdoBtn3);
             grpBoxConverGrp1.Controls.Add(rdoBtn2);
             grpBoxConverGrp1.Controls.Add(rdoBtn1);
-            grpBoxConverGrp1.Location = new Point(94, 255);
+            grpBoxConverGrp1.Location = new Point(94, 290);
             grpBoxConverGrp1.Name = "grpBoxConverGrp1";
-            grpBoxConverGrp1.Size = new Size(225, 142);
+            grpBoxConverGrp1.Size = new Size(225, 237);
             grpBoxConverGrp1.TabIndex = 6;
             grpBoxConverGrp1.TabStop = false;
-            grpBoxConverGrp1.Text = "groupBox1";
+            grpBoxConverGrp1.Text = "Conversion Group 1";
+            // 
+            // rdoBtn4
+            // 
+            rdoBtn4.AutoSize = true;
+            rdoBtn4.Location = new Point(30, 182);
+            rdoBtn4.Name = "rdoBtn4";
+            rdoBtn4.Size = new Size(70, 29);
+            rdoBtn4.TabIndex = 3;
+            rdoBtn4.TabStop = true;
+            rdoBtn4.Text = "Mile";
+            rdoBtn4.UseVisualStyleBackColor = true;
+            // 
+            // rdoBtn3
+            // 
+            rdoBtn3.AutoSize = true;
+            rdoBtn3.Location = new Point(30, 136);
+            rdoBtn3.Name = "rdoBtn3";
+            rdoBtn3.Size = new Size(112, 29);
+            rdoBtn3.TabIndex = 2;
+            rdoBtn3.TabStop = true;
+            rdoBtn3.Text = "Kilometer";
+            rdoBtn3.UseVisualStyleBackColor = true;
             // 
             // rdoBtn2
             // 
@@ -91,42 +120,66 @@
             // 
             // grpBoxConverGrp2
             // 
-            grpBoxConverGrp2.Controls.Add(rdoBtn4);
-            grpBoxConverGrp2.Controls.Add(rdoBtn3);
-            grpBoxConverGrp2.Location = new Point(438, 255);
+            grpBoxConverGrp2.Controls.Add(rdoBtn8);
+            grpBoxConverGrp2.Controls.Add(rdoBtn7);
+            grpBoxConverGrp2.Controls.Add(rdoBtn6);
+            grpBoxConverGrp2.Controls.Add(rdoBtn5);
+            grpBoxConverGrp2.Location = new Point(438, 290);
             grpBoxConverGrp2.Name = "grpBoxConverGrp2";
-            grpBoxConverGrp2.Size = new Size(255, 142);
+            grpBoxConverGrp2.Size = new Size(255, 237);
             grpBoxConverGrp2.TabIndex = 7;
             grpBoxConverGrp2.TabStop = false;
-            grpBoxConverGrp2.Text = "groupBox2";
+            grpBoxConverGrp2.Text = "Conversion Group 2";
             // 
-            // rdoBtn4
+            // rdoBtn8
             // 
-            rdoBtn4.AutoSize = true;
-            rdoBtn4.Location = new Point(23, 92);
-            rdoBtn4.Name = "rdoBtn4";
-            rdoBtn4.Size = new Size(83, 29);
-            rdoBtn4.TabIndex = 1;
-            rdoBtn4.TabStop = true;
-            rdoBtn4.Text = "Meter";
-            rdoBtn4.UseVisualStyleBackColor = true;
+            rdoBtn8.AutoSize = true;
+            rdoBtn8.Location = new Point(23, 182);
+            rdoBtn8.Name = "rdoBtn8";
+            rdoBtn8.Size = new Size(112, 29);
+            rdoBtn8.TabIndex = 4;
+            rdoBtn8.TabStop = true;
+            rdoBtn8.Text = "Kilometer";
+            rdoBtn8.UseVisualStyleBackColor = true;
             // 
-            // rdoBtn3
+            // rdoBtn7
             // 
-            rdoBtn3.AutoSize = true;
-            rdoBtn3.Location = new Point(23, 48);
-            rdoBtn3.Name = "rdoBtn3";
-            rdoBtn3.Size = new Size(70, 29);
-            rdoBtn3.TabIndex = 0;
-            rdoBtn3.TabStop = true;
-            rdoBtn3.Text = "Feet";
-            rdoBtn3.UseVisualStyleBackColor = true;
+            rdoBtn7.AutoSize = true;
+            rdoBtn7.Location = new Point(23, 136);
+            rdoBtn7.Name = "rdoBtn7";
+            rdoBtn7.Size = new Size(70, 29);
+            rdoBtn7.TabIndex = 3;
+            rdoBtn7.TabStop = true;
+            rdoBtn7.Text = "Mile";
+            rdoBtn7.UseVisualStyleBackColor = true;
+            // 
+            // rdoBtn6
+            // 
+            rdoBtn6.AutoSize = true;
+            rdoBtn6.Location = new Point(23, 92);
+            rdoBtn6.Name = "rdoBtn6";
+            rdoBtn6.Size = new Size(83, 29);
+            rdoBtn6.TabIndex = 1;
+            rdoBtn6.TabStop = true;
+            rdoBtn6.Text = "Meter";
+            rdoBtn6.UseVisualStyleBackColor = true;
+            // 
+            // rdoBtn5
+            // 
+            rdoBtn5.AutoSize = true;
+            rdoBtn5.Location = new Point(23, 48);
+            rdoBtn5.Name = "rdoBtn5";
+            rdoBtn5.Size = new Size(70, 29);
+            rdoBtn5.TabIndex = 0;
+            rdoBtn5.TabStop = true;
+            rdoBtn5.Text = "Feet";
+            rdoBtn5.UseVisualStyleBackColor = true;
             // 
             // lblFormula
             // 
             lblFormula.AutoSize = true;
             lblFormula.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblFormula.Location = new Point(94, 424);
+            lblFormula.Location = new Point(94, 551);
             lblFormula.Name = "lblFormula";
             lblFormula.Size = new Size(115, 32);
             lblFormula.TabIndex = 8;
@@ -136,7 +189,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(215, 424);
+            label3.Location = new Point(215, 551);
             label3.Name = "label3";
             label3.Size = new Size(53, 32);
             label3.TabIndex = 10;
@@ -154,7 +207,7 @@
             // 
             // btnInstructions
             // 
-            btnInstructions.Location = new Point(581, 419);
+            btnInstructions.Location = new Point(581, 552);
             btnInstructions.Name = "btnInstructions";
             btnInstructions.Size = new Size(112, 34);
             btnInstructions.TabIndex = 12;
@@ -188,6 +241,7 @@
             btnConvertRight.TabIndex = 15;
             btnConvertRight.Text = "--->";
             btnConvertRight.UseVisualStyleBackColor = true;
+            btnConvertRight.Click += btnConvertRight_Click;
             // 
             // btnConvertLeft
             // 
@@ -203,7 +257,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 499);
+            ClientSize = new Size(800, 658);
             Controls.Add(btnConvertLeft);
             Controls.Add(btnConvertRight);
             Controls.Add(textBoxUnit2);
@@ -232,8 +286,8 @@
         private RadioButton rdoBtn2;
         private RadioButton rdoBtn1;
         private GroupBox grpBoxConverGrp2;
-        private RadioButton rdoBtn4;
-        private RadioButton rdoBtn3;
+        private RadioButton rdoBtn6;
+        private RadioButton rdoBtn5;
         private Label lblFormula;
         private Label label3;
         private Label lblTitle;
@@ -242,5 +296,9 @@
         private TextBox textBoxUnit2;
         private Button btnConvertRight;
         private Button btnConvertLeft;
+        private RadioButton rdoBtn4;
+        private RadioButton rdoBtn3;
+        private RadioButton rdoBtn8;
+        private RadioButton rdoBtn7;
     }
 }
