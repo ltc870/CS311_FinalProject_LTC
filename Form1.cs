@@ -255,7 +255,11 @@ namespace CS311_FinalProject_LTC
 
         private void btnConvertLeft_Click(object sender, EventArgs e)
         {
+            LeftTextBoxValueChecker();
+            if (cboBoxUnitPicker.Text == "Length")
+            {
 
+            }
         }
 
 
