@@ -72,6 +72,7 @@ namespace CS311_FinalProject_LTC
                     if (rdoBtn5.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 3.28084);
+                        lblFormula.Text = "For an approximate result,\nmultiply the length value \nby 3.281";
                     }
                     else if (rdoBtn6.Checked)
                     {
@@ -80,10 +81,12 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn7.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString((value1 * 0.000621371));
+                        lblFormula.Text = "For an approximate result,\ndivide the length value \nby 1609";
                     }
                     else if (rdoBtn8.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 0.001);
+                        lblFormula.Text = "divide the length value by 1000";
                     }
                 }
                 else if (rdoBtn2.Checked)

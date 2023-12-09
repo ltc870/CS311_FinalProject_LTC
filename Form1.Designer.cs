@@ -39,8 +39,8 @@
             rdoBtn7 = new RadioButton();
             rdoBtn6 = new RadioButton();
             rdoBtn5 = new RadioButton();
+            lblFormulaTxt = new Label();
             lblFormula = new Label();
-            label3 = new Label();
             lblTitle = new Label();
             btnInstructions = new Button();
             textBoxUnit1 = new TextBox();
@@ -175,25 +175,25 @@
             rdoBtn5.Text = "Feet";
             rdoBtn5.UseVisualStyleBackColor = true;
             // 
+            // lblFormulaTxt
+            // 
+            lblFormulaTxt.AutoSize = true;
+            lblFormulaTxt.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFormulaTxt.Location = new Point(94, 551);
+            lblFormulaTxt.Name = "lblFormulaTxt";
+            lblFormulaTxt.Size = new Size(115, 32);
+            lblFormulaTxt.TabIndex = 8;
+            lblFormulaTxt.Text = "Formula:";
+            // 
             // lblFormula
             // 
             lblFormula.AutoSize = true;
             lblFormula.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblFormula.Location = new Point(94, 551);
+            lblFormula.Location = new Point(215, 551);
             lblFormula.Name = "lblFormula";
-            lblFormula.Size = new Size(115, 32);
-            lblFormula.TabIndex = 8;
-            lblFormula.Text = "Formula:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(215, 551);
-            label3.Name = "label3";
-            label3.Size = new Size(53, 32);
-            label3.TabIndex = 10;
-            label3.Text = "xxx";
+            lblFormula.Size = new Size(53, 32);
+            lblFormula.TabIndex = 10;
+            lblFormula.Text = "xxx";
             // 
             // lblTitle
             // 
@@ -264,8 +264,8 @@
             Controls.Add(textBoxUnit1);
             Controls.Add(btnInstructions);
             Controls.Add(lblTitle);
-            Controls.Add(label3);
             Controls.Add(lblFormula);
+            Controls.Add(lblFormulaTxt);
             Controls.Add(grpBoxConverGrp2);
             Controls.Add(grpBoxConverGrp1);
             Controls.Add(cboBoxUnitPicker);
@@ -288,8 +288,8 @@
         private GroupBox grpBoxConverGrp2;
         private RadioButton rdoBtn6;
         private RadioButton rdoBtn5;
+        private Label lblFormulaTxt;
         private Label lblFormula;
-        private Label label3;
         private Label lblTitle;
         private Button btnInstructions;
         private TextBox textBoxUnit1;
