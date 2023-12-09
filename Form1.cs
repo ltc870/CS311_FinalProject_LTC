@@ -86,7 +86,7 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn8.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 0.001);
-                        lblFormula.Text = "divide the length value by 1000";
+                        lblFormula.Text = "divide the length \nvalue by 1000";
                     }
                 }
                 else if (rdoBtn2.Checked)
