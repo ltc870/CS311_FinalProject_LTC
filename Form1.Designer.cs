@@ -252,6 +252,7 @@
             btnConvertLeft.TabIndex = 16;
             btnConvertLeft.Text = "<---";
             btnConvertLeft.UseVisualStyleBackColor = true;
+            btnConvertLeft.Click += btnConvertLeft_Click;
             // 
             // formUnitConverter
             // 

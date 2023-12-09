@@ -252,6 +252,13 @@ namespace CS311_FinalProject_LTC
                 }
             }
         }
+
+        private void btnConvertLeft_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
         private void RightTextBoxValueChecker()
         {
             if (!double.TryParse(textBoxUnit1.Text, out value1))
@@ -259,6 +266,15 @@ namespace CS311_FinalProject_LTC
                 MessageBox.Show("Please enter a valid number");
             }
         }
+
+        private void LeftTextBoxValueChecker()
+        {
+            if (!double.TryParse(textBoxUnit2.Text, out value2))
+            {
+                MessageBox.Show("Please enter a valid number");
+            }
+        }
+
 
     }
 }
