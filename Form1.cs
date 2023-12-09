@@ -223,6 +223,31 @@ namespace CS311_FinalProject_LTC
                     }
                 }
             }
+            else if (cboBoxUnitPicker.Text == "Temperature")
+            {
+                if (rdoBtn1.Checked)
+                {
+                    if (rdoBtn5.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString((value1 * 9 / 5) + 32);
+                    }
+                    else if (rdoBtn6.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                }
+                else if (rdoBtn2.Checked)
+                {
+                    if (rdoBtn5.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn6.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString((value1 - 32) * 5 / 9);
+                    }
+                }
+            }
         }
         private void RightTextBoxValueChecker()
         {
