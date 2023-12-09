@@ -165,20 +165,72 @@ namespace CS311_FinalProject_LTC
                         textBoxUnit2.Text = Convert.ToString(value1 * 35.274);
                     }
                 }
+                else if (rdoBtn2.Checked)
+                {
+                    if (rdoBtn5.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn6.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 / 2.205);
+                    }
+                    else if (rdoBtn7.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 453.592);
+                    }
+                    else if (rdoBtn8.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 16);
+                    }
+                }
+                else if (rdoBtn3.Checked)
+                {
+                    if (rdoBtn5.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 / 16);
+                    }
+                    else if (rdoBtn6.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 / 35.274);
+                    }
+                    else if (rdoBtn7.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 * 28.3495);
+                    }
+                    else if (rdoBtn8.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                }
+                else if (rdoBtn4.Checked)
+                {
+                    if (rdoBtn5.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 / 453.6);
+                    }
+                    else if (rdoBtn6.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 / 1000);
+                    }
+                    else if (rdoBtn7.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn8.Checked)
+                    {
+                        textBoxUnit2.Text = Convert.ToString(value1 / 28.35);
+                    }
+                }
             }
-
-
         }
-
         private void RightTextBoxValueChecker()
         {
-
             if (!double.TryParse(textBoxUnit1.Text, out value1))
             {
                 MessageBox.Show("Please enter a valid number");
             }
         }
-
 
     }
 }
