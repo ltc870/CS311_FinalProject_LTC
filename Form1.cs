@@ -258,7 +258,123 @@ namespace CS311_FinalProject_LTC
             LeftTextBoxValueChecker();
             if (cboBoxUnitPicker.Text == "Length")
             {
-
+                if (rdoBtn5.Checked)
+                {
+                    if (rdoBtn1.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 / 3.281);
+                    }
+                    else if (rdoBtn2.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn3.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 / 3281);
+                    }
+                    else if (rdoBtn4.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 / 5280);
+                    }
+                }
+                else if (rdoBtn6.Checked)
+                {
+                    if (rdoBtn1.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn2.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 * 3.281);
+                    }
+                    else if (rdoBtn3.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 / 1000);
+                    }
+                    else if (rdoBtn4.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 / 1609);
+                    }
+                }
+                else if (rdoBtn7.Checked)
+                {
+                    if (rdoBtn1.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 * 1609.34);
+                    }
+                    else if (rdoBtn2.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 * 5280);
+                    }
+                    else if (rdoBtn3.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 * 1.60934);
+                    }
+                    else if (rdoBtn4.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                }
+                else if (rdoBtn8.Checked)
+                {
+                    if (rdoBtn1.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 * 1000);
+                    }
+                    else if (rdoBtn2.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 * 3280.84);
+                    }
+                    else if (rdoBtn3.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn4.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 / 1.60934);
+                    }
+                }
+            }
+            else if (cboBoxUnitPicker.Text == "Mass")
+            {
+                if (rdoBtn5.Checked)
+                {
+                    if (rdoBtn1.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 / 2.205);
+                    }
+                    else if (rdoBtn2.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn3.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 * 16);
+                    }
+                    else if (rdoBtn4.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 * 453.592);
+                    }
+                }
+                if (rdoBtn6.Checked)
+                {
+                    if (rdoBtn1.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn2.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 * 2.20462);
+                    }
+                    else if (rdoBtn3.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 * 35.274);
+                    }
+                    else if (rdoBtn4.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 * 1000);
+                    }
+                }
             }
         }
 
@@ -278,7 +394,5 @@ namespace CS311_FinalProject_LTC
                 MessageBox.Show("Please enter a valid number");
             }
         }
-
-
     }
 }
