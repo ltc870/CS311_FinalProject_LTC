@@ -98,14 +98,17 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn6.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 / 3.281);
+                        lblFormula.Text = "For an approximate result,\ndivide the length value \nby 3.281";
                     }
                     else if (rdoBtn7.Checked)
                     {
-                        textBoxUnit2.Text = Convert.ToString((value1 / 5280));
+                        textBoxUnit2.Text = Convert.ToString(value1 / 5280);
+                        lblFormula.Text = "For an approximate result,\ndivide the length value \nby 5280";
                     }
                     else if (rdoBtn8.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 / 3281);
+                        lblFormula.Text = "For an approximate result,\ndivide the length value \nby 3281";
                     }
                 }
                 else if (rdoBtn3.Checked)
@@ -113,14 +116,17 @@ namespace CS311_FinalProject_LTC
                     if (rdoBtn5.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 3280.84);
+                        lblFormula.Text = "For an approximate result, \nmultiply the length \nvalue by 3281";
                     }
                     else if (rdoBtn6.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 1000);
+                        lblFormula.Text = "multiply the length \nvalue by 1000";
                     }
                     else if (rdoBtn7.Checked)
                     {
-                        textBoxUnit2.Text = Convert.ToString(value1 / 0.621371);
+                        textBoxUnit2.Text = Convert.ToString(value1 / 1.609);
+                        lblFormula.Text = "For an approximate result, \ndivide the length \nvalue by 1.609";
                     }
                     else if (rdoBtn8.Checked)
                     {
@@ -132,10 +138,12 @@ namespace CS311_FinalProject_LTC
                     if (rdoBtn5.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 5280);
+                        lblFormula.Text = "multiply the length \nvalue by 5280";
                     }
                     else if (rdoBtn6.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 1609.34);
+                        lblFormula.Text = "For an approximate result, \nmultiply the length \nvalue by 1609";
                     }
                     else if (rdoBtn7.Checked)
                     {
@@ -144,6 +152,7 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn8.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 1.60934);
+                        lblFormula.Text = "For an approximate result, \nmultiply the length \nvalue by 1.609";
                     }
                 }
             }
@@ -154,6 +163,7 @@ namespace CS311_FinalProject_LTC
                     if (rdoBtn5.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 2.20462);
+                        lblFormula.Text = "For an approximate result, \nmultiply the mass \nvalue by 2.205";
                     }
                     else if (rdoBtn6.Checked)
                     {
@@ -162,10 +172,12 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn7.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 1000);
+                        lblFormula.Text = "multiply the mass \nvalue by 1000";
                     }
                     else if (rdoBtn8.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 35.274);
+                        lblFormula.Text = "multiply the mass \nvalue by 35.274";
                     }
                 }
                 else if (rdoBtn2.Checked)
@@ -177,14 +189,17 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn6.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 / 2.205);
+                        lblFormula.Text = "For an approximate result, \ndivide the mass \nvalue by 2.205";
                     }
                     else if (rdoBtn7.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 453.592);
+                        lblFormula.Text = "multiply the mass \nvalue by 453.592";
                     }
                     else if (rdoBtn8.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 16);
+                        lblFormula.Text = "multiply the mass \nvalue by 16";
                     }
                 }
                 else if (rdoBtn3.Checked)
@@ -192,14 +207,17 @@ namespace CS311_FinalProject_LTC
                     if (rdoBtn5.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 / 16);
+                        lblFormula.Text = "divide the mass \nvalue by 16";
                     }
                     else if (rdoBtn6.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 / 35.274);
+                        lblFormula.Text = "divide the mass \nvalue by 35.274";
                     }
                     else if (rdoBtn7.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 * 28.3495);
+                        lblFormula.Text = "For an approximate amount, \nmultiply the mass \nvalue by 28.35";
                     }
                     else if (rdoBtn8.Checked)
                     {
@@ -211,10 +229,12 @@ namespace CS311_FinalProject_LTC
                     if (rdoBtn5.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 / 453.6);
+                        lblFormula.Text = "For an approximate amount, \ndivide the mass \nvalue by 453.6";
                     }
                     else if (rdoBtn6.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 / 1000);
+                        lblFormula.Text = "divide the mass \nvalue by 1000";
                     }
                     else if (rdoBtn7.Checked)
                     {
@@ -223,6 +243,7 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn8.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString(value1 / 28.35);
+                        lblFormula.Text = "For an approximate amount, \ndivide the mass \nvalue by 28.35";
                     }
                 }
             }
@@ -233,6 +254,7 @@ namespace CS311_FinalProject_LTC
                     if (rdoBtn5.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString((value1 * 9 / 5) + 32);
+                        lblFormula.Text = $"({value1}C * 9/5) + 32 = {textBoxUnit2.Text}F";
                     }
                     else if (rdoBtn6.Checked)
                     {
@@ -248,6 +270,7 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn6.Checked)
                     {
                         textBoxUnit2.Text = Convert.ToString((value1 - 32) * 5 / 9);
+                        lblFormula.Text = $"({value1}F - 32) * 5/9 = {textBoxUnit2.Text}C";
                     }
                 }
             }
@@ -263,6 +286,7 @@ namespace CS311_FinalProject_LTC
                     if (rdoBtn1.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 / 3.281);
+                        lblFormula.Text = "For an approximate result,\ndivide the length value \nby 3.281";
                     }
                     else if (rdoBtn2.Checked)
                     {
@@ -271,10 +295,12 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn3.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 / 3281);
+                        lblFormula.Text = "For an approximate result,\ndivide the length value \nby 3281";
                     }
                     else if (rdoBtn4.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 / 5280);
+                        lblFormula.Text = " divide the length value \nby 5280";
                     }
                 }
                 else if (rdoBtn6.Checked)
@@ -286,14 +312,17 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn2.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 * 3.281);
+                        lblFormula.Text = "For an approximate result,\nmultiply the length value \nby 3.281";
                     }
                     else if (rdoBtn3.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 / 1000);
+                        lblFormula.Text = "divide the length value \nby 1000";
                     }
                     else if (rdoBtn4.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 / 1609);
+                        lblFormula.Text = "For an approximate result,\ndivide the length value \nby 1609";
                     }
                 }
                 else if (rdoBtn7.Checked)
@@ -301,14 +330,17 @@ namespace CS311_FinalProject_LTC
                     if (rdoBtn1.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 * 1609.34);
+                        lblFormula.Text = "For an approximate result,\nmultiply the length value \nby 1609";
                     }
                     else if (rdoBtn2.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 * 5280);
+                        lblFormula.Text = "multiply the length value \nby 5280";
                     }
                     else if (rdoBtn3.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 * 1.60934);
+                        lblFormula.Text = "For an approximate result,\nmultiply the length value \nby 1.609";
                     }
                     else if (rdoBtn4.Checked)
                     {
@@ -320,10 +352,12 @@ namespace CS311_FinalProject_LTC
                     if (rdoBtn1.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 * 1000);
+                        lblFormula.Text = "multiply the length value \nby 1000";
                     }
                     else if (rdoBtn2.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 * 3280.84);
+                        lblFormula.Text = "For an approximate result,\nmultiply the length value \nby 3281";
                     }
                     else if (rdoBtn3.Checked)
                     {
@@ -332,6 +366,7 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn4.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 / 1.60934);
+                        lblFormula.Text = "For an approximate result,\ndivide the length value \nby 1.609";
                     }
                 }
             }
@@ -342,6 +377,7 @@ namespace CS311_FinalProject_LTC
                     if (rdoBtn1.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 / 2.205);
+                        lblFormula.Text = "For an approximate result,\ndivide the mass value \nby 2.205";
                     }
                     else if (rdoBtn2.Checked)
                     {
@@ -350,13 +386,15 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn3.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 * 16);
+                        lblFormula.Text = "multiply the mass value \nby 16";
                     }
                     else if (rdoBtn4.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 * 453.592);
+                        lblFormula.Text = "For an approximate result, \nmultiply the mass value \nby 453.592";
                     }
                 }
-                if (rdoBtn6.Checked)
+                else if (rdoBtn6.Checked)
                 {
                     if (rdoBtn1.Checked)
                     {
@@ -365,14 +403,89 @@ namespace CS311_FinalProject_LTC
                     else if (rdoBtn2.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 * 2.20462);
+                        lblFormula.Text = "For an approximate result, \nmultiply the mass value \nby 2.205";
                     }
                     else if (rdoBtn3.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 * 35.274);
+                        lblFormula.Text = "multiply the mass value \nby 35.274";
                     }
                     else if (rdoBtn4.Checked)
                     {
                         textBoxUnit1.Text = Convert.ToString(value2 * 1000);
+                        lblFormula.Text = "multiply the mass value \nby 1000";
+                    }
+                }
+                else if (rdoBtn7.Checked)
+                {
+                    if (rdoBtn1.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 / 1000);
+                        lblFormula.Text = "divide the mass value \nby 1000";
+                    }
+                    else if (rdoBtn2.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 / 453.592);
+                        lblFormula.Text = "For an approximate result, \ndivide the mass value \nby 453.6";
+                    }
+                    else if (rdoBtn3.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 / 28.35);
+                        lblFormula.Text = "For an approximate result, \ndivide the mass value \nby 28.35";
+                    }
+                    else if (rdoBtn4.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                }
+                else if (rdoBtn8.Checked)
+                {
+                    if (rdoBtn1.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 / 35.274);
+                        lblFormula.Text = "divide the mass value \nby 35.274";
+                    }
+                    else if (rdoBtn2.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 / 16);
+                        lblFormula.Text = "divide the mass value \nby 16";
+                    }
+                    else if (rdoBtn3.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn4.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString(value2 * 28.3495);
+                        lblFormula.Text = "For an approximate result, \nmultiply the mass value \nby 28.35";
+                    }
+                }
+
+            }
+            else if (cboBoxUnitPicker.Text == "Temperature")
+            {
+                if (rdoBtn5.Checked)
+                {
+                    if (rdoBtn1.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString((value2 - 32) * 5 / 9);
+                        lblFormula.Text = $"({value2}F - 32) * 5/9 = {textBoxUnit1.Text}C";
+                    }
+                    else if (rdoBtn2.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                }
+                else if (rdoBtn6.Checked)
+                {
+                    if (rdoBtn1.Checked)
+                    {
+                        MessageBox.Show("Cannot convert to the same unit type");
+                    }
+                    else if (rdoBtn2.Checked)
+                    {
+                        textBoxUnit1.Text = Convert.ToString((value2 * 9 / 5) + 32);
+                        lblFormula.Text = $"({value2}C * 9/5) + 32 = {textBoxUnit1.Text}F";
                     }
                 }
             }
