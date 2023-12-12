@@ -115,7 +115,7 @@ namespace CS311_FinalProject_LTC
 
         private string GetSelectedRadioButtonText(GroupBox groupBox)
         {
-            var checkedButton = groupBox.Controls.OfType<RadioButton>().FirstOrDefault(radio => radio.Checked);
+            var checkedButton = groupBox.Controls.OfType<RadioButton>().FirstOrDefault(rdoBtn => rdoBtn.Checked);
             return checkedButton?.Text;
         }
 
