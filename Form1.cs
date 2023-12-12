@@ -507,5 +507,12 @@ namespace CS311_FinalProject_LTC
                 MessageBox.Show("Please enter a valid number");
             }
         }
+
+        private void btnInstructions_Click(object sender, EventArgs e)
+        {
+            MessageBoxButtons buttons = MessageBoxButtons.OK;
+            string instructions = "Here are the insturctions in using this simple converter. There's two text boxes with arrow buttons in between them, one pointing to the right, and the other button pointing to the left. There's also a set of radio buttons under each text box, that corresponds to the unit of measurement in the dropdown list. You will pick from either the left set of radio buttons or the right set of radio and use the arrow buttons to perform the conversion. Please enter a number in one of the text boxes, choose your base unit under the text box with the number, then choose the unit you want to convert to on the opposite side. Please keep in mind, you will not be able to convert to the same unit type in the opposite set of radio buttons.";
+            MessageBox.Show(instructions, "Instructions", buttons);
+        }
     }
 }

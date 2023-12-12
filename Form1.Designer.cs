@@ -213,6 +213,7 @@
             btnInstructions.TabIndex = 12;
             btnInstructions.Text = "Instructions";
             btnInstructions.UseVisualStyleBackColor = true;
+            btnInstructions.Click += btnInstructions_Click;
             // 
             // textBoxUnit1
             // 
