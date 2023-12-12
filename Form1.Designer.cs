@@ -207,7 +207,7 @@
             // 
             // btnInstructions
             // 
-            btnInstructions.Location = new Point(581, 552);
+            btnInstructions.Location = new Point(95, 629);
             btnInstructions.Name = "btnInstructions";
             btnInstructions.Size = new Size(112, 34);
             btnInstructions.TabIndex = 12;
@@ -259,7 +259,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 658);
+            ClientSize = new Size(800, 694);
             Controls.Add(btnConvertLeft);
             Controls.Add(btnConvertRight);
             Controls.Add(textBoxUnit2);

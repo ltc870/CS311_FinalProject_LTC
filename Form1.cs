@@ -1,9 +1,15 @@
 namespace CS311_FinalProject_LTC
 {
+    public enum UnitType
+    {
+        Length,
+        Mass,
+        Temperature
+    }
     public partial class formUnitConverter : Form
     {
         // class members
-        private string unitType;
+        private Dictionary<UnitType, Dictionary<string, double>> conversionFactors;
         private double value1;
         private double value2;
 
@@ -11,13 +17,111 @@ namespace CS311_FinalProject_LTC
         public formUnitConverter()
         {
             InitializeComponent();
+            InitializeConversionFactors();
+        }
+
+        private void InitializeConversionFactors()
+        {
+            conversionFactors = new Dictionary<UnitType, Dictionary<string, double>>
+            {
+                {
+                    UnitType.Length, new Dictionary<string, double>
+                    {
+                        {"Meter", 1},
+                        {"Feet", 3.28084},
+                        {"Kilometer", 0.001},
+                        {"Mile", 0.000621371 }
+                    }
+                },
+                {
+                    UnitType.Mass, new Dictionary<string, double>
+                    {
+                        {"Kilogram", 1},
+                        {"Pound", 2.20462},
+                        {"Ounce", 35.274},
+                        {"Gram", 1000}
+                    }
+                },
+                {
+                    UnitType.Temperature, new Dictionary<string, double>
+                    {
+                        {"Celsius", 1},
+                        {"Fahrenheit", 33.8}
+                    }
+                }
+
+            };
+        }
+
+        private double ConvertUnits(double value, string fromUnit, string toUnit, UnitType unitType)
+        {
+            double fromFactor = conversionFactors[unitType][fromUnit];
+            double toFactor = conversionFactors[unitType][toUnit];
+
+            if (fromUnit == "Fahrenheit" && toUnit == "Celsius")
+            {
+                return (value - 32) * 5 / 9;
+            }
+
+            if (fromUnit == "Celsius" && toUnit == "Fahrenheit")
+            {
+                return (value * 9 / 5) + 32;
+            }
+
+            return value * (toFactor / fromFactor);
+        }
+
+        private void btnConvertRight_Click(object sender, EventArgs e)
+        {
+            RightTextBoxValueChecker();
+            if (Enum.TryParse(cboBoxUnitPicker.Text, out UnitType unitType))
+            {
+                string fromUnit = GetSelectedRadioButtonText(grpBoxConverGrp1);
+                string toUnit = GetSelectedRadioButtonText(grpBoxConverGrp2);
+
+                if (fromUnit != null && toUnit != null)
+                {
+                    double result = ConvertUnits(value1, fromUnit, toUnit, unitType);
+                    textBoxUnit2.Text = result.ToString();
+                    lblFormula.Text = $"Conversion: {value1} {fromUnit} to {toUnit}";
+                }
+                else
+                {
+                    MessageBox.Show("Please select units for conversion");
+                }
+            }
+        }
+
+        private void btnConvertLeft_Click(object sender, EventArgs e)
+        {
+            LeftTextBoxValueChecker();
+            if (Enum.TryParse(cboBoxUnitPicker.Text, out UnitType unitType))
+            {
+                string fromUnit = GetSelectedRadioButtonText(grpBoxConverGrp2);
+                string toUnit = GetSelectedRadioButtonText(grpBoxConverGrp1);
+
+                if (fromUnit != null && toUnit != null)
+                {
+                    double result = ConvertUnits(value2, fromUnit, toUnit, unitType);
+                    textBoxUnit1.Text = result.ToString();
+                    lblFormula.Text = $"Conversion: {value2} {fromUnit} to {toUnit}";
+                }
+                else
+                {
+                    MessageBox.Show("Please select units for conversion");
+                }
+            }
+        }
+
+        private string GetSelectedRadioButtonText(GroupBox groupBox)
+        {
+            var checkedButton = groupBox.Controls.OfType<RadioButton>().FirstOrDefault(radio => radio.Checked);
+            return checkedButton?.Text;
         }
 
         private void cboBoxUnitPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
             String data = cboBoxUnitPicker.GetItemText(cboBoxUnitPicker.SelectedItem);
-
-            unitType = data;
 
             switch (data)
             {
@@ -62,6 +166,7 @@ namespace CS311_FinalProject_LTC
             }
         }
 
+        /*
         private void btnConvertRight_Click(object sender, EventArgs e)
         {
             RightTextBoxValueChecker();
@@ -489,7 +594,7 @@ namespace CS311_FinalProject_LTC
                     }
                 }
             }
-        }
+        }*/
 
 
         private void RightTextBoxValueChecker()
